@@ -2,7 +2,9 @@ package main
 
 import "fmt"
 
-func main(){
+var someName = "hello"
+
+func main() {
 
 	//strings
 
@@ -10,11 +12,22 @@ func main(){
 	var nameOne string = "mario"
 
 	//Second way
-	var nameTwo = "luigi"
+	var nameTwo="luigi"
 
 	//Third way
-    var nameThree string
+	var nameThree string
 
 	fmt.Println(nameOne, nameTwo, nameThree)
-	
+
+	//Update value
+
+	nameOne = "peach"
+	nameThree = "bowser"
+
+	fmt.Println(nameOne, nameTwo, nameThree)
+
+	//4th way
+	nameFour := "yoshi"
+	fmt.Println(nameFour)
+
 }
