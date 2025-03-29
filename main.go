@@ -21,4 +21,14 @@ func main() {
 
   fmt.Println(scores, len(scores))
 
+  // slice ranges
+  rangeOne := names[1:3]
+  rangeTwo := names[2:]
+  rangeThree := names[:3]
+
+  fmt.Println(rangeOne, rangeTwo, rangeThree)
+
+  rangeOne = append(rangeOne, "Koopa")
+  fmt.Println(rangeOne)
+
 }
