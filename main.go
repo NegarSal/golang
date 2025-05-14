@@ -13,4 +13,9 @@ func main() {
 	}
 	fmt.Println(menu)
 	fmt.Println(menu["pie"])
+
+	// looping maps
+	for k, v := range menu {
+		fmt.Println(k, "-", v)
+	}
 }
