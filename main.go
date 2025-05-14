@@ -27,4 +27,11 @@ func main() {
 	}
 	fmt.Println(phonebook)
 	fmt.Println(phonebook[267584967])
+
+	// update value
+	phonebook[984759373] = "bowser"
+	fmt.Println(phonebook)
+
+	phonebook[845775485] = "yoshi"
+	fmt.Println(phonebook)
 }
