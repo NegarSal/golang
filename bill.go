@@ -27,10 +27,10 @@ func (b bill) format() string {
 
 	//list items
 	for k, v := range b.items {
-		fs += fmt.Sprintf("%v ...$%v \n", k+":", v)
+		fs += fmt.Sprintf("%-25v ...$%v \n", k+":", v)
 		total += v
 	}
 	// total
-	fs += fmt.Sprintf("%v ...$%0.2f", "total:", total)
+	fs += fmt.Sprintf("%-25v ...$%0.2f", "total:", total)
 	return fs
 }
